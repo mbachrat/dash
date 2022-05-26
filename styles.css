@@ -9,7 +9,32 @@
 }
 
 .dash {
-    border-style: solid;
+    background-color: rgb(36, 65, 65);
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubox {
+    display: grid;
+    gap: 10px;
+}
+
+.menu {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
 }
 
 .main {
@@ -24,4 +49,8 @@
 
 .content {
     border-style: solid;
+}
+
+.title {
+
 }
