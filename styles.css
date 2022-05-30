@@ -1,27 +1,107 @@
-.body {
-    background-color: rgb(176, 176, 176);
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-color: rgb(239, 246, 255);
 }
 
 .layout {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: 120px 3fr 1fr;
-    grid-template-rows: 850px;
+    border-style: solid;
+   
 }
 
 .dash {
+    display: grid;
+    grid-template-rows: 1fr 20px 20px 20px 1fr;
     border-style: solid;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .main {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 5fr;
     border-style: solid;
 }
 
-.header {
+.search {
+    display: grid;
+    grid-template-columns: 1fr 40px 40px;
+    padding-left: 30px;
+    align-items:center;
     border-style: solid;
+}
+
+.search input {
+    height: 30px;
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 40px;
+    
+    width: 280px;
+    
+}
+
+form {
+    display: flex;
+   
+    align-items:initial;
+
+}
+
+.search >form > img {
+ top: 40px;
+ border-bottom: 3px solid plum;
+ padding-bottom: 2px;
+}
+
+.search img {
+    height: 30px;
+}
+
+.header {
+    padding: 20px;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 1fr 80px 150px 20px;
+    align-items: center;
+}
+.gray {
+    color: grey;
 }
 
 .content {
     border-style: solid;
+    display: grid;
+    overflow: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 20px;
+}
+
+.card {
+    background-color: aquamarine;
+    box-shadow: 0 0 3px rgba(0 0 0 0.7);
 }
